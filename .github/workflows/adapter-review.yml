@@ -3,6 +3,11 @@ name: Adapter Review
 on:
   issue_comment:
     types: [created]
+  # Uncomment below to enable automatic triggering on adapter PRs:
+  # pull_request_target:
+  #   types: [opened, synchronize, reopened]
+  #   paths:
+  #     - "src/**"
   # Reviews and retries remain explicitly requested with /review-adapter.
 
 jobs:
