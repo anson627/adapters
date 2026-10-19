@@ -12,7 +12,6 @@ class AIMETask:
     def __init__(self, record: dict):
         self.id = record["id"]
         self.problem = record["problem"]
-        # Port harbor-framework/harbor-datasets#249 while the source has this typo.
         if self.id == "I-14":
             self.problem = self.problem.replace(
                 r"\angle ZBA = 60°", r"\angle B = \angle E = 60°"
